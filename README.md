@@ -20,5 +20,5 @@ Wojtek Kochański - Created the base and designed the application looked like. A
 <br/>
 <br/>
 
-The application was created as part of the scientific circle. It is used to register equipment that we can borrow. The project is still being developed and this is one of the first group projects.
+The application was created as part of the science Club. It is used to register equipment that we can borrow. The project is still being developed and this is one of the first group projects.
 
