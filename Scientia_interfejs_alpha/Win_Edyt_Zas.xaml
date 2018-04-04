@@ -5,8 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Scientia_interfejs_alpha"
         mc:Ignorable="d"
-        Title="Win_Edyt_Zas" Height="300" Width="300">
+        Title="Edytuj zasoby" Height="600" Width="900" Loaded="Window_Loaded">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="DGzasob" Grid.ColumnSpan="2" CanUserDeleteRows="False" CanUserAddRows="False" SelectionMode="Single" IsReadOnly="True" AutoGenerateColumns="False" MouseLeftButtonUp="DGzasob_MouseLeftButtonUp" SelectedValue="{Binding ID_zasobu}" SelectedValuePath="ID_zasobu">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="150*" Header="Nazwa" Binding="{Binding Nazwa}" />
+                <DataGridTextColumn Width="150*" Header="Kod" Binding="{Binding Kod}" />
+                <DataGridTextColumn Width="150*" Header="Opis" Binding="{Binding Opis}" />
+                <DataGridTextColumn Width="150*" Header="Kategoria" Binding="{Binding Kategoria}" />
+                <DataGridTextColumn Width="150*" Header="Stan Techniczny" Binding="{Binding Stan_techniczny}" />
+                <DataGridCheckBoxColumn  Width="100*" Header="Czy wypożyczalny" Binding="{Binding Czy_wypozyczalny}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="txtnazwa" Grid.Column="2" HorizontalAlignment="Left" Height="22" Margin="167,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtkod" Grid.Column="2" HorizontalAlignment="Left" Height="22" Margin="167,406,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtopis" Grid.Column="2" HorizontalAlignment="Left" Height="22" Margin="167,434,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtstan" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="167,488,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="cb_czywypoz" Content="Czy wypożyczalny" Grid.Column="2" HorizontalAlignment="Left" Margin="167,516,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmb_kat" Grid.Column="2" HorizontalAlignment="Left" Margin="167,462,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Name="LAPTAB">Laptopy i tablety</ComboBoxItem>
+            <ComboBoxItem Name="PC">PC stacjonarny</ComboBoxItem>
+            <ComboBoxItem Name="TEL">Telefony</ComboBoxItem>
+            <ComboBoxItem Name="SMWATCH">Smartwatche</ComboBoxItem>
+            <ComboBoxItem Name="INNE">Inne</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Nazwa" Grid.Column="2" HorizontalAlignment="Left" Margin="117,378,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kod" Grid.Column="2" HorizontalAlignment="Left" Margin="131,406,0,0" VerticalAlignment="Top"/>
+        <Label Content="Opis" Grid.Column="2" HorizontalAlignment="Left" Margin="129,434,0,0" VerticalAlignment="Top"/>
+        <Label Content="Kategoria" Grid.Column="2" HorizontalAlignment="Left" Margin="101,462,0,0" VerticalAlignment="Top"/>
+        <Label Content="Stan techniczny" Grid.Column="2" HorizontalAlignment="Left" Margin="69,488,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btndodaj" Content="Dodaj" Grid.Column="2" HorizontalAlignment="Left" Margin="213,538,0,0" VerticalAlignment="Top" Width="74" Click="btndodaj_Click"/>
+        <GroupBox Header="Dodaj nowy sprzęt" HorizontalAlignment="Left" Width="287" Grid.Column="2" Margin="5,319,0,0"/>
+        <Button x:Name="btnedytuj" Content="Edytuj" Grid.Column="2" HorizontalAlignment="Left" Margin="134,538,0,0" VerticalAlignment="Top" Width="74" IsEnabled="False" Click="btnedytuj_Click"/>
+        <Button x:Name="btnczysc" Content="Wyczyść" Grid.Column="2" HorizontalAlignment="Left" Margin="213,353,0,0" VerticalAlignment="Top" Width="74" Click="btnczysc_Click"/>
     </Grid>
 </Window>

@@ -5,8 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Scientia_interfejs_alpha"
         mc:Ignorable="d"
-        Title="Wind_Edyt_Czl" Height="300" Width="300">
+        Title="Edytuj Członków" Height="600" Width="1200" Loaded="Window_Loaded">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="DGczlon" Grid.ColumnSpan="2" CanUserDeleteRows="False" CanUserAddRows="False" SelectionMode="Single" IsReadOnly="True" AutoGenerateColumns="False" MouseLeftButtonUp="DGczlon_MouseLeftButtonUp" SelectedValue="{Binding ID_osoby}" SelectedValuePath="ID_osoby">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="150*" Header="Nazwisko" Binding="{Binding Nazwisko}" />
+                <DataGridTextColumn Width="150*" Header="Imię" Binding="{Binding Imie}" />
+                <DataGridTextColumn Width="150*" Header="Nr albumu" Binding="{Binding Nr_albumu}" />
+                <DataGridTextColumn Width="150*" Header="Ranga" Binding="{Binding Ranga}" />
+                <DataGridTextColumn Width="150*" Header="Login" Binding="{Binding Logg}" />
+                <DataGridTextColumn Width="150*" Header="Hasło" Binding="{Binding Haslo}" />
+                <DataGridTextColumn Width="150*" Header="Telefon" Binding="{Binding Telefon}" />
+                <DataGridTextColumn Width="150*" Header="E-Mail" Binding="{Binding E_mail}" />
+                <DataGridTextColumn Width="150*" Header="Opis" Binding="{Binding Opis}" />
+                <DataGridCheckBoxColumn  Width="100*" Header="Czy aktywny" Binding="{Binding Czy_aktywny}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="txtimie" Grid.Column="2" HorizontalAlignment="Left" Height="22" Margin="257,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtnazwi" Grid.Column="2" HorizontalAlignment="Left" Height="22" Margin="257,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtnr_alb" Grid.Column="2" HorizontalAlignment="Left" Height="22" Margin="257,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtlog" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="257,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="cb_czyakty" Content="Czy aktywny" Grid.Column="2" HorizontalAlignment="Left" Margin="301,508,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmb_rang" Grid.Column="2" HorizontalAlignment="Left" Margin="257,340,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Name="ADM">Admin</ComboBoxItem>
+            <ComboBoxItem Name="CZL">Członek</ComboBoxItem>
+            <ComboBoxItem Name="GOSC">Gość</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Imię" Grid.Column="2" HorizontalAlignment="Left" Margin="219,256,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nazwisko" Grid.Column="2" HorizontalAlignment="Left" Margin="197,284,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nr albumu" Grid.Column="2" HorizontalAlignment="Left" Margin="191,312,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ranga" Grid.Column="2" HorizontalAlignment="Left" Margin="211,340,0,0" VerticalAlignment="Top"/>
+        <Label Content="Login" Grid.Column="2" HorizontalAlignment="Left" Margin="215,366,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btndodaj" Content="Dodaj" Grid.Column="2" HorizontalAlignment="Left" Margin="307,536,0,0" VerticalAlignment="Top" Width="74" Click="btndodaj_Click"/>
+        <GroupBox Header="Dodaj nowego członka" HorizontalAlignment="Left" Width="271" Grid.Column="2" Margin="116,214,0,5"/>
+        <Button x:Name="btnedytuj" Content="Edytuj" Grid.Column="2" HorizontalAlignment="Left" Margin="227,536,0,0" VerticalAlignment="Top" Width="74" IsEnabled="False" Click="btnedytuj_Click"/>
+        <Button x:Name="btnczysc" Content="Wyczyść" Grid.Column="2" HorizontalAlignment="Left" Margin="303,232,0,0" VerticalAlignment="Top" Width="74" Click="btnczysc_Click"/>
+        <TextBox x:Name="txthaslo" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="257,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Hasło" Grid.Column="2" HorizontalAlignment="Left" Margin="215,394,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txttele" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="257,422,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Telefon" Grid.Column="2" HorizontalAlignment="Left" Margin="207,422,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtmail" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="257,450,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Email" Grid.Column="2" HorizontalAlignment="Left" Margin="217,452,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtopis"  Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="257,478,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Opis" Grid.Column="2" HorizontalAlignment="Left" Margin="221,480,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

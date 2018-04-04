@@ -7,7 +7,7 @@ ID_osoby smallint not null primary key IDENTITY(1,1),
 Imie nvarchar(20) not null,
 Nazwisko nvarchar(40) not null,
 Nr_albumu nvarchar(6),
-Ranga nvarchar(30) not null CHECK(Ranga='admin' or Ranga='czlonek' or Ranga='gosc'),
+Ranga nvarchar(30) not null CHECK(Ranga='Admin' or Ranga='Cz³onek' or Ranga='Goœæ'),
 Logg varchar(20),
 Haslo varchar(20),
 Data_dolaczenia date,
@@ -17,7 +17,7 @@ Opis nvarchar(200),
 Czy_aktywny bit not null --czy aktualnie dzia³a w kole
 )
 
-insert into Osoby values('Wojtek','Kochañski',null,'admin','wojtus','haslo123','2018-12-13','231312','3213"@dwad.pl','dwawdaddhfwjh',1)
+insert into Osoby values('Wojtek','Kochañski',null,'Admin','wojtus','haslo123','2018-12-13','231312','3213"@dwad.pl','dwawdaddhfwjh',1)
 
 Select * from Osoby
 

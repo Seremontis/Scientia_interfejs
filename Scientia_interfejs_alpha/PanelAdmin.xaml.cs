@@ -40,7 +40,33 @@ namespace Scientia_interfejs_alpha
         {
             InitializeComponent();
             this.DPdzis.SelectedDate = DateTime.Now;
-          
+
+            pol.DataSource = "";                            ////połączenie z bazą
+            pol.InitialCatalog = "Ewidencja_SI";
+            pol.IntegratedSecurity = true;
+
+            DataTable dane = ds.Tables.Add("Dane");
+            aktualizacja();
+
+
+        }
+        public class Wypozyczenie
+        {
+            public int Id { get; set; }
+
+            public string Nazwa { get; set; }
+
+            public string Kod { get; set; }
+
+            public bool aktualne { get; set; }
+
+            public string Data_wypoz { get; set; }
+
+            public string Data_zwrot { get; set; }
+
+            public string Kto { get; set; }
+
+            public string Telefon { get; set; }
         }
         public class Sprzet
         {
@@ -49,6 +75,8 @@ namespace Scientia_interfejs_alpha
             public string Nazwa { get; set; }
 
             public string Kategoria { get; set; }
+
+            public string Kod { get; set; }
 
             public string Opis { get; set; }
 
@@ -117,18 +145,6 @@ namespace Scientia_interfejs_alpha
             win_Edyt_Zas.ShowDialog();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {                                            
-            pol.DataSource = "";                            ////połączenie z bazą
-            pol.InitialCatalog = "Ewidencja_SI";
-            pol.IntegratedSecurity = true;
-
-            DataTable dane = ds.Tables.Add("Dane");
-            aktualizacja();
-
-
-        }
-
         private void aktualizacja()                 //aktualizacja danych w oknie
         {
            try
@@ -157,14 +173,14 @@ namespace Scientia_interfejs_alpha
 
             try
             {
-                ///prowizorka ;)
+                //prowizorka ;)
 
 
                 ds.Tables["Dane"].Clear();
               
                 adap = new SqlDataAdapter();
 
-                    string zapytanie = @"SELECT DISTINCT(z.ID_zasobu),z.Nazwa,z.Kategoria,z.Opis,z.Stan_techniczny,z.Czy_wypozyczalny,z.Status_wypozyczenia,
+                    string zapytanie = @"SELECT DISTINCT(z.ID_zasobu),z.Nazwa,z.Kod,z.Kategoria,z.Opis,z.Stan_techniczny,z.Czy_wypozyczalny,z.Status_wypozyczenia,
                                      CASE 
                                     WHEN z.Status_wypozyczenia=0  THEN null
 		                            WHEN  z.Status_wypozyczenia=1 then FORMAT(w.Data_wypozyczenia, 'dd/MM/yyyy')
@@ -176,7 +192,11 @@ namespace Scientia_interfejs_alpha
                                     CASE 
                                     WHEN z.Status_wypozyczenia=0  THEN null
 		                            WHEN  z.Status_wypozyczenia=1 then o.Imie+' '+Nazwisko
-                                    END AS 'Kto'
+                                    END AS 'Kto',
+                                    CASE 
+                                    WHEN z.Status_wypozyczenia=0  THEN null
+		                            WHEN  z.Status_wypozyczenia=1 then o.Telefon
+                                    END AS Telefon
                                     from Zasoby z
                                     left join Wypozyczenia w on z.ID_zasobu=w.ID_zasobu
                                     left join Osoby o on o.ID_osoby=w.ID_osoby 
@@ -207,10 +227,33 @@ namespace Scientia_interfejs_alpha
             }
             //tu konczy sie prowizorka
 
+            try
+            {
 
-            DGprzeglad.ItemsSource = ds.Tables["Dane"].AsDataView();
+  
+            var przeglad = from dane in ds.Tables["Dane"].AsEnumerable()
+                           where dane.Field<bool>("Status_wypozyczenia")==true
+                           select new Wypozyczenie
+                           {
+                               Nazwa = dane.Field<string>("Nazwa"),
+                               Kod = dane.Field<string>("Kod"),
+                               aktualne = dane.Field<bool>("Status_wypozyczenia"),
+                               Data_wypoz = dane.Field<string>("Data_wypozyczenia"),
+                               Data_zwrot = dane.Field<string>("Data_zwrot"),
+                               Kto = dane.Field<string>("Kto"),
+                               Telefon = dane.Field<string>("Telefon")
+                           };
 
 
+          
+            DGprzeglad.ItemsSource = przeglad;
+
+            }
+            catch (Exception EXC)
+            {
+
+                MessageBox.Show(EXC.Message);
+            }
 
         }
 
@@ -219,7 +262,7 @@ namespace Scientia_interfejs_alpha
 
             if (dgsprzet.SelectedValue != null)             //sprawdzanie pustych wartości
             {
-                if (DPdokiedy.SelectedDate != null)
+                if (DPdokiedy.SelectedDate != null && DPdokiedy.SelectedDate>DateTime.Now)
                 {
                     if (CBkto.SelectedValue != null || (RBgosc.IsChecked == true && dane_imie.IsMatch(txtboximie.Text) && dane_nazwisko.IsMatch(txtboxnazwisko.Text) && numer_tel.IsMatch(txtboxnumer.Text)))
                     {
@@ -237,7 +280,7 @@ namespace Scientia_interfejs_alpha
                             if ((int)cm.ExecuteScalar() == 0)
                             {
                                 con.Close();
-                                if (RBgosc.IsChecked == true)               ///jeśli gość,dodajemy jego dane do bazy
+                                if (RBgosc.IsChecked == true)               //jeśli gość,dodajemy jego dane do bazy
                                 {
                                     
                                  
@@ -247,7 +290,7 @@ namespace Scientia_interfejs_alpha
                                             SqlParameter imie = new SqlParameter("@imie", txtboximie.Text);
                                             SqlParameter nazwisko = new SqlParameter("@nazwisko", txtboxnazwisko.Text);
                                             SqlParameter numer = new SqlParameter("@numer", txtboxnumer.Text);
-                                            string zapytanie_uzytk = @"INSERT INTO Osoby VALUES (@imie,@nazwisko,'','Gosc','','',CURRENT_TIMESTAMP,@numer,'','',1)";
+                                            string zapytanie_uzytk = @"INSERT INTO Osoby VALUES (@imie,@nazwisko,'','Gość','','',CURRENT_TIMESTAMP,@numer,'','',1)";
 
                                             cm = new SqlCommand(zapytanie_uzytk, con);
                                             cm.Parameters.Add(imie);
@@ -269,7 +312,6 @@ namespace Scientia_interfejs_alpha
                                             SqlDataReader red = cm.ExecuteReader();
                                             if (red.Read())
                                             {
-
                                                 osoba = new SqlParameter("@osoba", red.GetInt16(0));
                                             }
                                         }
@@ -359,7 +401,7 @@ namespace Scientia_interfejs_alpha
                     }
                     else MessageBox.Show("Proszę wybrać osobę bądź podać poprawnie dane osobowe");
                 }
-                else MessageBox.Show("Proszę wybrać datę");
+                else MessageBox.Show("Proszę wybrać prawidłową datę");
             }
             else MessageBox.Show("Proszę wybrać sprzęt");
        
@@ -417,18 +459,36 @@ namespace Scientia_interfejs_alpha
             {
                 if (Convert.ToInt32(ds.Tables["Dane"].Rows[i][0])== Convert.ToInt32(dgsprzet.SelectedValue))
                 {
-                    if (Convert.ToString(ds.Tables["Dane"].Rows[i][6]) == "True")
+                    if (Convert.ToBoolean(ds.Tables["Dane"].Rows[i][6]) == false)
+                    {
+                        btnwypozycz.IsEnabled = false;
+                        btnoddaj.IsEnabled = false;
+                        break;
+                    }
+                    else if (Convert.ToBoolean(ds.Tables["Dane"].Rows[i][6]) == true && Convert.ToBoolean(ds.Tables["Dane"].Rows[i][7]) == true)
                     {
                         btnwypozycz.IsEnabled = false;
                         btnoddaj.IsEnabled = true;
-                    }
-                    else
+                        break;
+                    }                   
+                    else if (Convert.ToBoolean(ds.Tables["Dane"].Rows[i][6]) == true && Convert.ToBoolean(ds.Tables["Dane"].Rows[i][7]) == false)
                     {
                         btnwypozycz.IsEnabled = true;
                         btnoddaj.IsEnabled = false;
+                        break;
                     }
                 }
             }
+        }
+
+        private void MIplik_Click(object sender, RoutedEventArgs e)
+        {
+            //zrzut wypożyczeń do pliku
+        }
+
+        private void Window_Activated(object sender, EventArgs e)
+        {
+            aktualizacja();
         }
     }
 }

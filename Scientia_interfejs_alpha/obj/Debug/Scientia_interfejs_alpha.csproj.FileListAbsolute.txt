@@ -90,26 +90,98 @@ H:\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfej
 H:\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.exe
 H:\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.pdb
 E:\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csproj.CoreCompileInputs.cache
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.exe.config
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.exe
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.pdb
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csprojResolveAssemblyReference.cache
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\LogAdmin.g.cs
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\MainWindow.g.cs
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\PanelAdmin.g.cs
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Wind_Edyt_Czl.g.cs
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Win_Edyt_Zas.g.cs
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\App.g.cs
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha_MarkupCompile.cache
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha_MarkupCompile.lref
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\LogAdmin.baml
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\MainWindow.baml
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\PanelAdmin.baml
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Wind_Edyt_Czl.baml
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Win_Edyt_Zas.baml
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.g.resources
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.Properties.Resources.resources
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csproj.GenerateResource.Cache
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csproj.CoreCompileInputs.cache
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.exe
-g:\Na git huba\Scientia_interfejs\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.pdb
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.exe.config
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.exe
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.pdb
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csprojResolveAssemblyReference.cache
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\LogAdmin.g.cs
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\MainWindow.g.cs
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\PanelAdmin.g.cs
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Wind_Edyt_Czl.g.cs
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Win_Edyt_Zas.g.cs
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\App.g.cs
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha_MarkupCompile.cache
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha_MarkupCompile.lref
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\LogAdmin.baml
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\MainWindow.baml
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\PanelAdmin.baml
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Wind_Edyt_Czl.baml
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Win_Edyt_Zas.baml
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.g.resources
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.Properties.Resources.resources
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csproj.GenerateResource.Cache
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csproj.CoreCompileInputs.cache
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.exe
+C:\Users\W\Downloads\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.pdb
+F:\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.exe.config
+F:\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.exe
+F:\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.pdb
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csprojResolveAssemblyReference.cache
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\LogAdmin.g.cs
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\MainWindow.g.cs
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\PanelAdmin.g.cs
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Wind_Edyt_Czl.g.cs
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Win_Edyt_Zas.g.cs
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\App.g.cs
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha_MarkupCompile.cache
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha_MarkupCompile.lref
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.exe
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.pdb
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.exe.config
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.exe
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.pdb
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\LogAdmin.baml
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\MainWindow.baml
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\PanelAdmin.baml
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Wind_Edyt_Czl.baml
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Win_Edyt_Zas.baml
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.g.resources
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.Properties.Resources.resources
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csproj.GenerateResource.Cache
+C:\Users\W\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csproj.CoreCompileInputs.cache
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.exe.config
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.exe
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.pdb
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csprojResolveAssemblyReference.cache
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\LogAdmin.g.cs
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\MainWindow.g.cs
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\PanelAdmin.g.cs
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Wind_Edyt_Czl.g.cs
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Win_Edyt_Zas.g.cs
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\App.g.cs
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha_MarkupCompile.cache
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha_MarkupCompile.lref
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\LogAdmin.baml
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\MainWindow.baml
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\PanelAdmin.baml
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Wind_Edyt_Czl.baml
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Win_Edyt_Zas.baml
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.g.resources
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.Properties.Resources.resources
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csproj.GenerateResource.Cache
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csproj.CoreCompileInputs.cache
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.exe
+C:\Users\XXX\Desktop\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.pdb
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.exe.config
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.exe
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\bin\Debug\Scientia_interfejs_alpha.pdb
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csprojResolveAssemblyReference.cache
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\LogAdmin.g.cs
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\MainWindow.g.cs
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\PanelAdmin.g.cs
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Wind_Edyt_Czl.g.cs
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Win_Edyt_Zas.g.cs
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\App.g.cs
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha_MarkupCompile.cache
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha_MarkupCompile.lref
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\LogAdmin.baml
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\MainWindow.baml
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\PanelAdmin.baml
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Wind_Edyt_Czl.baml
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Win_Edyt_Zas.baml
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.g.resources
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.Properties.Resources.resources
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csproj.GenerateResource.Cache
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.csproj.CoreCompileInputs.cache
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.exe
+H:\koło\Scientia_interfejs_alpha\Scientia_interfejs_alpha\Scientia_interfejs_alpha\obj\Debug\Scientia_interfejs_alpha.pdb

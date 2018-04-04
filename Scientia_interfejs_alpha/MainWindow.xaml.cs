@@ -31,8 +31,16 @@ namespace Scientia_interfejs_alpha
 
         public MainWindow()
         {
-            InitializeComponent();           
-            
+            InitializeComponent();
+            SqlConnectionStringBuilder pol = new SqlConnectionStringBuilder();
+            pol.DataSource = "";
+            pol.InitialCatalog = "Ewidencja_SI";
+            pol.IntegratedSecurity = true;
+
+            con = new SqlConnection(pol.ConnectionString);
+
+            odswiez();
+
         }
         public class Sprzet
         {
@@ -142,19 +150,6 @@ namespace Scientia_interfejs_alpha
             
                  
         } //filtrowanie listy sprzętu
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)                                    //połączenie z baza
-        {
-            SqlConnectionStringBuilder pol = new SqlConnectionStringBuilder();                                  
-            pol.DataSource = "";
-            pol.InitialCatalog = "Ewidencja_SI";
-            pol.IntegratedSecurity = true;
-
-            con = new SqlConnection(pol.ConnectionString);
-
-            odswiez();
-           
-        }
 
         private void odswiez()
         {
