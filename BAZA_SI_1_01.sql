@@ -1,7 +1,8 @@
 Create database Ewidencja_SI
-
+go
 
 use Ewidencja_SI
+go
 Create table Osoby(
 ID_osoby smallint not null primary key IDENTITY(1,1),
 Imie nvarchar(20) not null,
@@ -16,7 +17,7 @@ E_mail nvarchar(70),
 Opis nvarchar(200),
 Czy_aktywny bit not null --czy aktualnie dzia³a w kole
 )
-
+go
 insert into Osoby values('Wojtek','Kochañski',null,'Admin','wojtus','haslo123','2018-12-13','231312','3213"@dwad.pl','dwawdaddhfwjh',1)
 
 Select * from Osoby
@@ -31,6 +32,7 @@ Stan_techniczny nvarchar(100),
 Czy_wypozyczalny bit not null,--zepsuty,sprawny,za drogi itp.
 Status_wypozyczenia bit not null
 )
+go
 Insert into Zasoby values('Laptop Kasi','','super szybki mega super','Laptopy i tablety','sprawny',1,0)
 
 Select * from Zasoby
@@ -43,6 +45,7 @@ Data_wypozyczenia date not null,
 Data_zwrot date, --przewidywana
 aktualne bit --pokazuje czy dane s¹ aktualne czy historyczne
 )
+go
 Insert into Wypozyczenia values(1,1,'2017-02-22','2017-03-22',0)
 
 Select * from Wypozyczenia

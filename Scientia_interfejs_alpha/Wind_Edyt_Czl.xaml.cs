@@ -160,7 +160,7 @@ namespace Scientia_interfejs_alpha
                     sqlCommand.Parameters.Add("@p8", SqlDbType.NVarChar).Value = txttele.Text;
                     sqlCommand.Parameters.Add("@p9", SqlDbType.NVarChar).Value = txtmail.Text;
                     sqlCommand.Parameters.Add("@p10", SqlDbType.NVarChar).Value = txtopis.Text;
-                    sqlCommand.Parameters.Add("@p11", SqlDbType.Bit).Value = cb_czyakty.IsChecked;
+                    sqlCommand.Parameters.Add("@p11", SqlDbType.Bit).Value = (cb_czyakty.IsChecked==true)?true:false;
                     sqlCommand.CommandType = CommandType.Text;
                     sqlCommand.ExecuteNonQuery();
                     sqlConnection.Close();
@@ -170,7 +170,7 @@ namespace Scientia_interfejs_alpha
                 }
                 catch(Exception exc)
                 {
-                    MessageBox.Show(exc.Message, "Błąd");
+                    MessageBox.Show(exc.Message, "Błąd1");
                 }
             }
         }
