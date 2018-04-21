@@ -491,7 +491,7 @@ namespace Scientia_interfejs_alpha
             //zrzut wypożyczeń do pliku
 
             SaveFileDialog folder = new SaveFileDialog();
-            // Feed the dummy name to the save dialog
+            // miejsce do zapisania plikow txt
             folder.FileName = "Zapisz tutaj";
             Nullable<bool> czy_zapis = folder.ShowDialog();
             if (czy_zapis == true)
