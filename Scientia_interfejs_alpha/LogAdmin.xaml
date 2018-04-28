@@ -24,8 +24,8 @@
             <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="txtboxlog" Grid.Column="3" Grid.Row="1" FontSize="20"/>
-        <PasswordBox x:Name="txtboxpsw" Grid.Column="3" Grid.Row="3" FontSize="20"/>
+        <TextBox x:Name="txtboxlog" Grid.Column="3" Grid.Row="1" FontSize="20" KeyDown="txtboxpsw_KeyDown"/>
+        <PasswordBox x:Name="txtboxpsw" Grid.Column="3" Grid.Row="3" FontSize="20" KeyDown="txtboxpsw_KeyDown"/>
         <Label Grid.Column="1" Grid.Row="1" Content="Login:" HorizontalContentAlignment="Center" />
         <Label Grid.Column="1" Grid.Row="3" Content="Hasło:" HorizontalContentAlignment="Center"/>
         <Label Grid.ColumnSpan="4" Grid.Row="0" Content="Panel Administracyjny Wypożyczeń" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>

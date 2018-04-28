@@ -26,13 +26,12 @@ namespace Scientia_interfejs_alpha
         DataSet ds = new DataSet();
         SqlDataAdapter adap = new SqlDataAdapter();
         SqlConnection con;
-
+        SqlConnectionStringBuilder pol = new SqlConnectionStringBuilder();
 
 
         public MainWindow()
         {
-            InitializeComponent();
-            SqlConnectionStringBuilder pol = new SqlConnectionStringBuilder();
+            InitializeComponent();           
             pol.DataSource = "";
             pol.InitialCatalog = "Ewidencja_SI";
             pol.IntegratedSecurity = true;
@@ -58,18 +57,12 @@ namespace Scientia_interfejs_alpha
 
                 public bool Czywypozyczony { get; set; }
 
-            //public string Details
-            //{
-            //    get
-            //    {
-            //        return String.Format("{0} was born on {1} and this is a long description of the person.");
-            //    }
-            //}
+
         }
         
         private void BtnPanel_Click(object sender, RoutedEventArgs e)
         {
-            LogAdmin logadm = new LogAdmin();
+            LogAdmin logadm = new LogAdmin(pol.DataSource,pol.InitialCatalog);
             logadm.ShowDialog();            
         }
         private void BtnO_Click(object sender, RoutedEventArgs e)
